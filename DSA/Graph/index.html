@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Graph</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK8TV34GJW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BK8TV34GJW');
+</script>
+
+<!-- <meta name="description" content="Data Structures And Algorithms Visualisation."/>
+<meta name="robots" content="index, follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=0.3">
+<link rel="canonical" href="https://graphicalstructure.codes/" />
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Graphical Structure">
+<meta property="og:description" content="Data Structures And Algorithms Visualisation.">
+<meta property="og:url" content="https://graphicalstructure.codes">
+<meta property="og:site_name" content="Graphical Structure">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Graphical Structure">
+<meta name="twitter:description" content="Data Structures And Algorithms Visualisation.">
+<script type="application/ld+json" class="rank-math-schema">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "EducationalOrganization",
+            "@id": "https://graphicalstructure.codes/#organization",
+            "name": "Graphical Structure",
+            "url": "https://graphicalstructure.codes",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://graphicalstructure.codes/Playground/logo1.png"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://graphicalstructure.codes/#website",
+            "url": "https://graphicalstructure.codes",
+            "name": "Graphical Structure",
+            "publisher": {
+                "@id": "https://graphicalstructure.codes#organization"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://blog.graphicalstructure.codes/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "CollectionPage",
+            "@id": "https://graphicalstructure.codes/#webpage",
+            "url": "https://graphicalstructure.codes/",
+            "name": "Graphical Structure",
+            "about": {
+                "@id": "https://graphicalstructure.codes/#organization"
+            },
+            "isPartOf": {
+                "@id": "https://graphicalstructure.codes/#website"
+            },
+            "inLanguage": "en-US"
+        }
+    ]
+}</script> -->
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+
+
+
+<link rel="icon" href="../favicon.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="../stack.css">
+<link rel="stylesheet" href="../queue.css">
+<link rel="stylesheet" href="../style.css">
+
+<script src="../Scripts/jquery.js"></script>
+<script src="../Scripts/jquery-ui.js"></script>
+<script src="../Scripts/Line.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCKSfOfUQ23myUg-woZwWiLOMsjmuBwAHM",
+    authDomain: "graphicalstructure.firebaseapp.com",
+    databaseURL: "https://graphicalstructure-default-rtdb.firebaseio.com",
+    projectId: "graphicalstructure",
+    storageBucket: "graphicalstructure.appspot.com",
+    messagingSenderId: "350537227105",
+    appId: "1:350537227105:web:f03bf9e28a96e06fd30320"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+</head>
+<body>
+
+
+<input id ="codetype" spellcheck="false" type="text" placeholder="Code here and press Enter >__"/>
+
+
+
+
+<div class="log" id="log1" style="position: fixed;">
+
+</div>
+
+<div class="watermark" style="position: fixed;">
+
+  <img  src="../logo1.png"/>
+
+</div>
+
+
+
+
+
+
+<div class="footer" style="display: none;">
+
+<p id="feed" class="uncaps" style=" opacity:100%; color: black; margin-top: -10px; font-size: 120%; text-shadow: 0 0 3px #FF0000; "></p>
+
+
+</div>
+
+
+<div id="infotab" style="position: absolute; z-index: 0; position: fixed; top: 40%; left: -300px; width: auto; height: auto;transition: 300ms;">
+
+  <div id="infos"style=" top:0 ; left:0;" ><p style="position: absolute; font-size:xx-large; margin-top:5px; margin-left: 120px; color:#3282b8;font-family:Segoe UI; cursor:default;">Codes();</p><img src="../info.png" style="position: absolute;height: 40px; width: 40px; left: 300px; top: 10px;" ></div>
+
+</div>
+
+
+
+<div class="infomega"  id="listofcommand" style="text-align: center;">
+
+  <p>Graph Documentation <a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/a" target="_blank">Here</a></p>
+  <p style="font-size:80%;">Zoom out : CTRTL -</p>
+  <p style="font-size:80%;">Zoom in  : CTRTL +</p>
+
+
+
+  <div id="grappph">
+
+
+
+    <p class = "acchead"  id="graphacc" style="background-color: rgba(0, 0, 0, 0.123);">Graph</p>
+
+    <div class="autohide" id="graphaccdata">
+
+   <p  style="font-size: 100%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);">Create graph before performing algorithms<br>Or,you can import graph if saved earlier.</p>
+
+    <p  style="font-size: 100%; background-color: rgba(0, 0, 0, 0.01); color: #FF0000;">To connect vertices, Press and Hold Shift on source and then drop it on destination then enter the edge weight. :)</p>
+
+    <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Create vertices.</p>
+
+
+     <div class="commandcopy">
+      <p>Graph(no-of-vertices)</p>
+    </div>
+
+    <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Breadth-First Search</p>
+
+
+     <div class="commandcopy">
+      <p>bfs('starting-vertex')</p>
+    </div>
+
+    <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Depth-First Search</p>
+
+
+     <div class="commandcopy">
+      <p>dfs('starting-vertex')</p>
+    </div>
+
+    <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Single-Source shortest path by Dijkastra's Algorithm</p>
+
+
+     <div class="commandcopy">
+      <p>Dijkstra('starting-vertex')</p>
+    </div>
+
+    <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">All pair shortest path by Floyd-Warshall Algorithm</p>
+
+     <div class="commandcopy">
+      <p>FloydWarshall()</p>
+    </div>
+
+    <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Minimum spanning tree by Kruskal's Algorithm</p>
+
+     <div class="commandcopy">
+      <p>Kruskal()</p>
+    </div>
+
+    <!-- <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: 12px;margin-top: 40px;">Utility function to import graph saved at google firebase.</p> -->
+
+<!--
+    <div >
+      <img src="../firebase.png" width="13%"/>
+    </div>
+
+
+  <div class="commandcopy">
+    <p>importgraph("graphname")</p>
+  </div> -->
+
+  <p  style="font-size: 110%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 40px;">Some prebuilt graph that you can use.</p>
+
+
+  <div class="commandcopy">
+    <p>importgraph("Final2")</p>
+  </div>
+
+  <div class="commandcopy">
+    <p>importgraph("star")</p>
+  </div>
+
+
+ <div class="commandcopy">
+    <p>importgraph("megastar")</p>
+  </div>
+
+
+ <div class="commandcopy">
+    <p>importgraph("complete")</p>
+  </div>
+
+
+  <!-- <p  style="font-size: 80%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 60px;">Utility function to export graph at google firebase after you make a graph.</p>
+
+
+  <div class="commandcopy">
+    <p>exportgraph("newgraphname")</p>
+  </div> -->
+
+
+
+  <!-- <p class = "acchead"  id="arrayacc" style="font-size: 130%; background-color: rgba(0, 0, 0, 0.01); color: #FF0000;">Note</p> -->
+
+  <div>
+    <p>To connect 2 vertices.</p>
+    <p style="position: relative; margin-top: -15px; font-size: small;  color: rgba(0, 0, 0, 0.589);">graphy('source' , 'destination' , weight , 'type')</p>
+    <p style="position: relative; margin-top: -15px; font-size: small;  color: rgba(0, 0, 0, 0.589);">Example : graphy('A' , 'B' , 10 , '-UD-')</p>
+    <p style="position: relative; margin-top: -15px; font-size: small;  color: rgba(0, 0, 0, 0.589);">Example : graphy('F' , 'D' , -8 , 'D')</p>
+
+  </div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+  </div>
+
+
+
+<div id="anispeed" style="z-index: 2;display: none; position: fixed; top: 70%; left: -250px; width: auto; height: auto;">
+  <div id="anislow"><p style="position: absolute; font-size:xx-large; margin-top:10px; margin-left: 110px; color:rgb(0, 0, 0);font-family:Segoe UI; cursor:default;">Slow</p><img src="../snail.png" style="position: absolute;height: 40px; width: 40px; left: 255px; top: 10px;" ></div>
+  <div id="aniquick"><p style="position: absolute; font-size:xx-large; margin-top:10px; margin-left: 110px;  color:rgb(0, 0, 0);font-family:Segoe UI; cursor: default;">Quick</p><img src="../light.png" style="transform: rotate(15deg); position: absolute;height: 40px; width: 50px; left: 250px; top: 13px;" ></div>
+  </div>
+
+
+
+  <div class="slidecontainer" >
+    <img src="../fastman.png" id="fastiden" style="width: 20%; position: absolute;top:-100px;left:105px; opacity: .5;"/>
+    <img src="../slowman.png" id="slowiden" style="width: 20%; position: absolute;top: 100px;left:105px; opacity: .5;"/>
+    <input type="range" min="1" max="100" value="50" class="slider" id="animation-speed" style="transform: rotate(-90deg);">
+    <audio id="myAudio" src="../music.mp3" preload="auto"></audio>
+      <a onClick="togglePlay()"><img src="../music.png" style="width: 40%; position: absolute;top:130px;left:35px;"/></a>
+
+  </div>
+
+
+  <div id="direction" style="z-index: 2; position: fixed; bottom: 30%; left: -250px; width: auto; height: auto;">
+    <div id="undirected_"><p style="position: absolute; font-size:xx-large; margin-top:7px; margin-left: 50px; color:rgb(0, 0, 0);font-family:Segoe UI; cursor:default;">Undirected</p><img src="../line.png" style="position: absolute;height: 40px; width: 40px; left: 255px; top: 10px;" ></div>
+    <div id="directed_"><p style="position: absolute; font-size:xx-large; margin-top:7px; margin-left: 70px;  color:rgb(0, 0, 0);font-family:Segoe UI; cursor: default;">Directed</p><img src="../Arrow-right-512.png" style="position: absolute;height: 40px; width: 40px; left: 255px; top: 10px;" ></div>
+
+    </div>
+
+
+
+<!-- <div id="copy"><p id="copyrightname">Anoop Singh, Graphical Structure © 2020</p></div> -->
+
+<img id = "play-btn" src="../playbtn.png"  style= "position:fixed; right:290px;top: 140px;width: 70px; border-radius: 100%; "/>
+<img id = "pause-btn" src="../clock.png"  style= "position:fixed; right:200px;top: 140px;width: 70px; border-radius: 100%;"/>
+
+
+<!---
+<script src="all.js"></script>
+<script src="AVL.js"></script>
+<script src="expression.js"></script>
+<script src="trie.js"></script>
+<script src="LCS.js"></script>
+-->
+
+<script src="../Scripts/Algorithm/fx.js"></script>
+<script src="../Scripts/Algorithm/info.js"></script>
+<script src="../Scripts/Algorithm/lineshandle.js"></script>
+<script src="../Scripts/Algorithm/graph.js"></script>
+
+</body>
+</html>

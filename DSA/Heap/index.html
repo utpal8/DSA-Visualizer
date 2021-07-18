@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Heap</title>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BK8TV34GJW');
+</script>
+
+
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+
+
+<link rel="icon" href="../favicon.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="../stack.css">
+<link rel="stylesheet" href="../queue.css">
+<link rel="stylesheet" href="../style.css">
+
+<script src="../Scripts/jquery.js"></script>
+<script src="../Scripts/jquery-ui.js"></script>
+<script src="../Scripts/Line.js"></script>
+
+
+</head>
+<body>
+
+
+  <input id ="codetype" spellcheck="false" type="text" placeholder="Code here and press Enter >__"/>
+
+
+
+
+<div class="log" id="log1" style="position: fixed;">
+
+</div>
+
+<div class="watermark" style="position: fixed;">
+
+  <img  src="../logo1.png"/>
+
+</div>
+
+
+
+
+
+
+<div class="footer" style="display: none;">
+
+<p id="feed" class="uncaps" style=" opacity:100%; color: black; margin-top: -10px; font-size: 120%; text-shadow: 0 0 3px #FF0000; "></p>
+
+
+</div>
+
+
+<div id="infotab" style="position: absolute; z-index: 0; position: fixed; top: 40%; left: -300px; width: auto; height: auto;transition: 300ms;">
+
+  <div id="infos"style=" top:0 ; left:0;" ><p style="position: absolute; font-size:xx-large; margin-top:5px; margin-left: 120px; color:#3282b8;font-family:Segoe UI; cursor:default;">Codes();</p><img src="../info.png" style="position: absolute;height: 40px; width: 40px; left: 300px; top: 10px;" ></div>
+
+</div>
+
+
+
+<div class="infomega"  id="listofcommand" style="text-align: center;">
+
+  <p>Max heap Documentation <a href="https://www.geeksforgeeks.org/max-heap-in-java/" target="_blank">Here</a></p>
+  <p style="font-size:80%;">Zoom out : CTRTL -</p>
+  <p style="font-size:80%;">Zoom in  : CTRTL +</p>
+
+
+
+  <div >
+
+    <p class = "acchead" id="heapacc" style="background-color: rgba(0, 0, 0, 0.123); ">Heap</p>
+    <div class="autohide" id="heapaccdata">
+
+      <p  style="font-size: 100%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);">Create heap first, either by createheap or insertheap</p>
+
+      <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Create heap (Elements are seperated by commas).</p>
+
+      <div class="commandcopy">
+        <p>createheap([elements])</p>
+      </div>
+
+      <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Insert element into heap.</p>
+
+     <div class="commandcopy">
+      <p>insertheap(value)</p>
+    </div>
+
+    <p  style="font-size: 85%; background-color: rgba(255, 255, 255, 0); color: rgba(0, 0, 0, 0.637);margin-bottom: -12px;margin-top: 20px;">Delete the root of the heap.</p>
+
+    <div class="commandcopy">
+      <p>deleteheap()</p>
+    </div>
+
+
+  </div>
+
+  </div>
+
+
+
+  </div>
+
+
+
+<div id="anispeed" style="z-index: 2;display: none; position: fixed; top: 70%; left: -250px; width: auto; height: auto;">
+  <div id="anislow"><p style="position: absolute; font-size:xx-large; margin-top:10px; margin-left: 110px; color:rgb(0, 0, 0);font-family:Segoe UI; cursor:default;">Slow</p><img src="../snail.png" style="position: absolute;height: 40px; width: 40px; left: 255px; top: 10px;" ></div>
+  <div id="aniquick"><p style="position: absolute; font-size:xx-large; margin-top:10px; margin-left: 110px;  color:rgb(0, 0, 0);font-family:Segoe UI; cursor: default;">Quick</p><img src="../light.png" style="transform: rotate(15deg); position: absolute;height: 40px; width: 50px; left: 250px; top: 13px;" ></div>
+  </div>
+
+  <div class="slidecontainer" >
+    <img src="../fastman.png" id="fastiden" style="width: 20%; position: absolute;top:-100px;left:105px; opacity: .5;"/>
+    <img src="../slowman.png" id="slowiden" style="width: 20%; position: absolute;top: 100px;left:105px; opacity: .5;"/>
+    <input type="range" min="1" max="100" value="50" class="slider" id="animation-speed" style="transform: rotate(-90deg);">
+    <audio id="myAudio" src="../music.mp3" preload="auto"></audio>
+      <a onClick="togglePlay()"><img src="../music.png" style="width: 40%; position: absolute;top:130px;left:35px;"/></a>
+
+  </div>
+
+
+
+
+
+<img id = "play-btn" src="../playbtn.png"  style= "position:fixed; right:290px;top: 140px;width: 70px; border-radius: 100%; "/>
+<img id = "pause-btn" src="../clock.png"  style= "position:fixed; right:200px;top: 140px;width: 70px; border-radius: 100%;"/>
+
+
+<script src="../Scripts/Algorithm/fx.js"></script>
+<script src="../Scripts/Algorithm/info.js"></script>
+<script src="../Scripts/Algorithm/array.js"></script>
+<script src="../Scripts/Algorithm/Heap.js"></script>
+<script src="../Scripts/Algorithm/Tree.js"></script>
+
+</body>
+</html>
