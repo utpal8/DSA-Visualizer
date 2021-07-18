@@ -1,7 +1,7 @@
 ## 📌 Introduction
 A web application using HTML, CSS, Bootstrap, and JavaScript. Where users can play with different Data structures & algorithms.
-● Visual will work on Pre-loaded and user- entered data as where user can adjust the animation speed, play/pause, easy drag and drop, that makes learning interactive and fun.
-● It contains 12+ DSA including Array, Stack, BST, AVL etc.
+- Visual will work on Pre-loaded and user- entered data as where user can adjust the animation speed, play/pause, easy drag and drop, that makes learning interactive and fun.
+- It contains 12+ DSA including Array, Stack, BST, AVL etc.
 
 ## 💻 Languages/libraries used in this project
 - HTML
